@@ -4,9 +4,9 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "sqlite2duckdb"
-version = "0.3.0"
-authors = [{name="Sacha Schutz", email="sacha.schutz@pm.me"}]
+name = "sqlite2duckdb-native"
+version = "0.3.1"
+authors = [{name="Sacha Schutz", email="sacha.schutz@pm.me"}, {name="Dan Birken", email="birken@gmail.com"}]
 description = "A tool to convert sqlite database to duckdb database"
 readme = "README.md"
 requres-python = ">=3.8"
@@ -22,8 +22,8 @@ dependencies = [
 
 
 [project.urls]
-Homepage = "https://github.com/dridk/sqlite2duckdb"
-Issues = "https://github.com/dridk/sqlite2duckdb/issues"
+Homepage = "https://github.com/danbirken/sqlite2duckdb"
+Issues = "https://github.com/danbirken/sqlite2duckdb/issues"
 
 [project.scripts]
 sqlite2duckdb = "sqlite2duckdb.__main__:main_cli"

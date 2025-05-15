@@ -1,4 +1,3 @@
-import duckdb
 import argparse
 import os
 from sqlite2duckdb import sqlite_to_duckdb, __VERSION__

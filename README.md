@@ -1,7 +1,4 @@
-# sqlite2duckdb
-
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sqlite2duckdb)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/sqlite2duckdb)
+# sqlite2duckdb-native
 
 A tool for converting a [sqlite](https://www.sqlite.org/) database into a [duckdb](https://duckdb.org/) database
 
@@ -13,11 +10,12 @@ Duckdb is also an embedded database, but column-oriented, designed for analytica
 
 For more details [https://towardsdatascience.com/forget-about-sqlite-use-duckdb-instead-and-thank-me-later-df76ee9bb777](https://towardsdatascience.com/forget-about-sqlite-use-duckdb-instead-and-thank-me-later-df76ee9bb777)
 
+Uses the native "COPY" statement in duckdb, which preserves constraints
 
 ## Installation 
 
 ```
-pip install sqlite2duckdb
+pip install sqlite2duckdb-native
 ```
 
 ## Usage 
@@ -55,16 +53,3 @@ from sqlite2duckdb  import sqlite_to_duckdb
 sqlite_to_duckdb("source.sqlite", "target.duckdb")
 
 ```
-
-## Todo 
-
-- [ ] Custom mapping
-- [ ] Relation and constraint 
-
-
-### See also 
-
-- [Harlequin](https://github.com/tconbeer/harlequin): A nice duckdb IDE for your terminal
-
-
-
